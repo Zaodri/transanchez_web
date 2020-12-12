@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rutas de vehículos</title>
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400italic,700italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+ 	<link href="css/mobilemenu.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/simple-line-icons.css" rel="stylesheet">
+	<link href="css/foundation.min.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
+	<link href="css/transanchez.css" rel="stylesheet">
+
+	<link href="css/less/colors/darkRed.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/administrador.css">
+	<link rel="stylesheet" href="../css/registroCSS.css">
+	
+	<!-- Theme color -->
+	<link href="css/less/colors/darkRed.min.css" rel="stylesheet">
+		 
+	<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+
+	<script src="js/lib/modernizr.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+        <div class="imagenFondo">
+        	<nav>
+                <!-- <img src="images/verde_fondo_.png">-->
+                <form class="form__reg" action="">
+                	<h2><b></b> Vehicle routes</h2>
+		            <br>
+		            </br> 
+                    <div class="btn__form">
+                        <label>Write data
+                        </label>
+                    </div>
+                    <input class="input" type="text" placeholder="✳️ Company name:" required autofocus>
+                    <input class="input" type="text" placeholder="✳️ City:" required>
+                    <input class="input" type="text" placeholder="✳️ Address:" required>                               
+                                                                               
+                    <div class="btn__form">
+                        <div class="btn__form">
+                        <label>Observations
+                    <input class="input" type="tel" placeholder="Fill in observations" required>
+                        </label>
+                    </div>
+                        <input class="btn__submit" type="submit" value="Send"/>
+                        <input class="btn__submit" type="submit" value="Save"/>
+                        <input class="btn__reset" type="reset" value="🖨️ To print">
+                    </div>
+                </form>
+            </nav>
+        </div>
+        
+        <script data-main="js/script.js" src="js/lib/require.js"></script>
+
+</body>
+</html>

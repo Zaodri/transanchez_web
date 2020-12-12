@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Transanchez S.A.S</title>
+
+        <meta name="viewport" content="width=device-width, user-scalable=no"/>
+
+        <meta http-equiv="Content-type"  content="text/html; charset=UTF-8"/>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400italic,700italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'/>
+        <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'/>
+        <link href="../css/transanchez.css" rel="stylesheet"/>
+
+        <!-- Theme color -->
+        <link href="../css/less/colors/darkRed.min.css" rel="stylesheet"/>
+
+
+        <link rel="icon" type="image/png" href="favicon.png" sizes="32x32"/>
+
+        <h:outputStylesheet name="/../css/bootstrap.min.css"/>
+    </h:head>
+
+    <h:body >
+        <body data-currency="$">
+            <h:form id="form" class="form-horizontal">
+
+                <hr/>
+                <h:outputLabel for="username" class="control-label col-sm-2">User Name</h:outputLabel>  
+                <h:outputText id="name-id" value="#{editUser.name}" class="form-control"/>                     
+                <h:commandButton action = "#{user.edit('85000001')}" value="Update" class="btn btn-primary"></h:commandButton>
+                <f:selectItem itemValue="M" itemLabel="Male" />  
+                <f:selectItem itemValue="F" itemLabel="Female" />
+                <hr/><!--  //Para hacer lìneas verticales en la pagina -->
+            </h:form>
+
+        </body>        
+
+
+
+    </h:body>
+</html>

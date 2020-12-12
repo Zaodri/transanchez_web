@@ -1,0 +1,78 @@
+<!DOCTYPE html>	
+<html lang = "es">
+    <head>
+        <title>Administrador Transanchez</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, user-scalable=no"/>
+
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400italic,700italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link href="css/mobilemenu.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/simple-line-icons.css" rel="stylesheet">
+        <link href="css/foundation.min.css" rel="stylesheet">
+        <link href="css/jquery.fancybox.css" rel="stylesheet">
+        <link href="css/style.min.css" rel="stylesheet">
+        <link href="css/transanchez.css" rel="stylesheet">
+
+        <!-- Theme color -->
+        <link href="css/less/colors/darkRed.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/administrador.css">
+        <link rel="stylesheet" href="../css/registroCSS.css">
+
+        <link href="image/trSanchez/logo.png" sizes="32x32">
+
+        <script src="js/lib/modernizr.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    </head>		
+    <body>
+        <div  class="imagenFondo">
+
+            <nav>
+                <!-- <img src="images/verde_fondo_.png">-->
+                <form class="form__reg" action="">
+                    <label>User</label>
+                    <input class="input" type="text" value="#{editUser.name}" placeholder="&#128101; Names" required autofocus>
+                    <input class="input" type="text" placeholder="&#128101; Surname" required>
+                    <input class="input" type="text" placeholder="&#128101; Second surname" required>
+                    <input class="input" type="email" placeholder="&#9993; E-mail" required>
+                    <input class="input" type="tel" placeholder="&#128222; Phone" required>
+                    <input class="input" type="text" placeholder="&#127969; Address" required>
+                    <div class="btn__form">
+                        <input class="btn__submit" type="submit" value="register"/>
+                        <input class="btn__reset" type="reset" value="Clear">
+                    </div>
+                </form><!--<h:inputText id="name-id" value="#{editUser.name}" class="form-control"/>-->
+            </nav>
+        </div>
+        
+        <div class="admin-bop">
+            <h2><b></b> Welcome...</h2>
+            <br>
+            <h1>Administrator</h1>
+            </br>
+            
+            <nav class="js-navs-list">
+                
+                <button type="button" onclick="#{user.edit('85000001')}">
+                    <a href="Empleado.html" class="Aceptar">Employees</a>
+                </button> <br> <br>
+                <button type="button">
+                    <a href="Clientes.html" class="Aceptar">Customers</a>
+                </button> <br> <br>
+                <button type="button">
+                    <a href="Entrega_mercancia.html" class="Aceptar">Merchandise deliveries</a>
+                </button> <br> <br>
+                <button type="button">
+                    <a href="Rutas_de_vehiculos.html" class="Aceptar">Vehicle routes</a>
+                </button> <br> <br>
+                <button type="button">
+                    <a href="Mecanico.html" class="Aceptar">Control and maintenance of vehicles</a>
+                </button>
+            </nav>
+        </div>
+        <script data-main="js/script.js" src="js/lib/require.js"></script>
+    </body>	
+</html>																	
